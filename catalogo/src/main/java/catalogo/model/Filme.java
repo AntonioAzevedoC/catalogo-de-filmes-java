@@ -7,6 +7,22 @@ public class Filme {
     private int ano;
     private Float nota;
 
+    // Constructor
+    public Filme() {
+        this.id = null;
+        this.titulo = "Titulo";
+        this.diretor = "Diretor";
+        this.ano = 0;
+        this.nota = 0.0f;
+    }
+    public Filme(Long id, String titulo, String diretor, int ano, Float nota) {
+        this.id = id;
+        this.titulo = titulo;
+        this.diretor = diretor;
+        this.ano = ano;
+        this.nota = nota;
+    }
+
     // GET/SET id
     public Long getId() {
         return id;
