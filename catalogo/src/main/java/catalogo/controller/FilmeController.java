@@ -6,6 +6,8 @@ import org.springframework.web.bind.annotation.*;
 import java.util.ArrayList;
 import java.util.List;
 
+@RestController // indica que a classe recebe e responde requisição REST
+@RequestMapping("/filme") // recebe e responde o endpoint /filme
 public class FilmeController {
     List<Filme> filmes = new ArrayList<>();
 

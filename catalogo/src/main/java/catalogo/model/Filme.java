@@ -57,5 +57,12 @@ public class Filme {
     public Float getNota() {
         return nota;
     }
-    public void setNota(Float nota) { this.nota = nota; }
+    public void setNota(Float nota) {
+        if (nota > 10 || nota < 0) {
+            System.out.println("Nota deve estar entre 0 e 10");
+            this.nota = 0.0f;
+        } else {
+            this.nota = nota;
+        }
+    }
 }
